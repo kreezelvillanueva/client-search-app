@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require_relative '../lib/client_search/cli'
+
+ClientSearch::CLI.start(ARGV)
