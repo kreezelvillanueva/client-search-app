@@ -1,9 +1,5 @@
 module ClientSearch
   class Search
-    def self.by_name(clients, query)
-      clients.select { |client| client.full_name.downcase.include?(query.downcase) }
-    end
-
     def self.by_conditions(clients, conditions)
       clients.select do |client|
         evaluate_conditions(client, conditions)

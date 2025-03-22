@@ -92,5 +92,5 @@ This is a minimalist command-line application built using Ruby. The application 
 
 ## Running Tests
 ```sh
-rspec
+bundle exec rspec
 ```

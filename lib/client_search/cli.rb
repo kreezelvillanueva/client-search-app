@@ -12,7 +12,7 @@ module ClientSearch
       clients = DataLoader.load_clients(options[:data_file])
       conditions = parse_query(options[:query])
       results = Search.by_conditions(clients, conditions)
-      puts "Search result:"
+      puts "Search results:"
       results.each do |result|
         puts "  - #{result}"
       end
